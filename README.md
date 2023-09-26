@@ -15,3 +15,4 @@ last but least, hyprland and xdg-desktop-portal-hyprland
 People who I yoink the codes from;
 
 https://github.com/adi1090x/rofi
+https://github.com/d1en25/Hyprland-dotfiles
