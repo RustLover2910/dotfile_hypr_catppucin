@@ -1,0 +1,135 @@
+{
+  "layer": "top",
+  "margin-left": 8,
+  "margin-right": 8,
+  "margin-top": 8,
+  "margin-down": 12,
+  "modules-left": [
+    "hyprland/workspaces",
+    "tray"
+  ],
+  "modules-center": ["custom/player"],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "clock",
+    "hyprland/language"
+  ],
+  "custom/player": {
+    "format": " {}",
+    "max-length": 100,
+    "exec-if": "pgrep spotify",
+    "exec-on-event": "on-click",
+    "interval": 1,
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-down": "playerctl -p spotify previous",
+    "on-scroll-up": "playerctl -p spotify next",
+    "tooltip": true,
+    "escape": true,
+    "exec": "/home/archyboy/.config/waybar/scripts/player.sh"
+  },
+  "pulseaudio": {
+    "tooltip": false,
+    "scroll-step": 5,
+    "format": "{icon} {volume}% ",
+    "format-muted": "󰝟 0% ",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": " {temperatureC}°C"
+  },
+ "hyprland/workspaces": {
+    "all-outputs": true,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+		"format": "{icon}",
+		"on-click": "activate",
+    "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "urgent": "",
+        "active": "",
+        "default": ""
+    }
+  },
+  "hyprland/language": {
+    "format": "󰌌 {}",
+    "format-en": "EN",
+    "format-de": "DE"
+    //"format-uk": "Ukraine"
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{: %I:%M %p }",
+    "format-alt": "{: %a %d/%m }"
+  },
+  "cpu": {
+    "interval": 1,
+    "format": " {}% ",
+    "max-length": 8
+  },
+  "memory": {
+    "interval": 2,
+    "format": " {}% ",
+    "max-length": 8
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}% ",
+    "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󰛨"]
+  },
+  "custom/wl-gammarelay-temperature": {
+    "format": "{}  ",
+    "exec": "wl-gammarelay-rs watch {t}",
+    "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
+    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+  },
+  "battery": {
+    "interval": 3,
+    "states": {            // "good": 95,
+      "warning": 40,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂"]
+  },
+  "battery#bat2": {
+    "bat": "BAT2"
+  },
+  "custom/clipboard": {
+    "format": "",
+    "on-click": "~/.config/hypr/cliphist.sh",
+    "on-click-right": "killall rofi"
+  },
+  "custom/launcher": {
+    "format": "",
+    "on-click": "~/.config/rofi/scripts/launcher_t1",
+    "on-click-right": "killall rofi"
+  },
+   "custom/power": {
+    "format": "⏻",
+    "on-click": "~/.config/rofi/scripts/powermenu_t3",
+    "on-click-right": "killall rofi"
+  }
+ }

@@ -1,0 +1,116 @@
+@import "frappe.css";
+
+* {
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+window#waybar {
+  border-radius: 6px;
+  border: 2px solid @mauve;
+  background: @base;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background: @base;
+}
+tooltip label {
+  color: @lavender;
+}
+#cava-internal
+#clock,
+#cpu,
+#custom-player,
+#custom-clipboard,
+#language,
+#window,
+#memory,
+#temperature,
+#pulseaudio,
+#wireplumber,
+#workspaces,
+#tray {
+  padding: 0 5px;
+  color: @white;
+}
+
+
+#workspaces button {
+  color: #7984a4;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.focused {
+  background-color: transparent;
+}
+#workspace button.hover {
+  background-color: transparent;
+}
+#workspaces button.active {
+  color: @lavender;
+}
+
+
+#pulseaudio {
+  color: @lavender;
+}
+
+@keyframes blink {
+  to {
+    background-color: @mantle;
+    color: @text;
+  }
+}
+
+#custom-player {
+  color: @green;
+}
+
+#clock {
+  color: @lavender;
+}
+
+#memory {
+  color: @green;
+}
+
+#custom-clipboard {
+  font-size: 20.5px;
+  padding: 0 15px 0 10px;
+  color: @blue;
+}
+#cpu {
+  color: @teal;
+}
+#temperature {
+  color: @yellow;
+}
+#language {
+  color: @mauve;
+}
+#backlight {
+  color: @lavender;
+}
+#battery {
+  color: @sapphire;
+}
+#custom-launcher {
+  font-size: 22px;
+  padding: 0 8px 0 15px;
+  color: @sky;
+}
+
+#custom-power {
+  font-size: 20px;
+  padding: 0 20px 0 7px;
+  color: @red;
+}
