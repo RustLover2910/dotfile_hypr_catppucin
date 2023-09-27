@@ -69,7 +69,7 @@
     }
   },
   "hyprland/language": {
-    "format": "󰌌 {}",
+    "format": "󰌌 {} ",
     "format-en": "EN",
     "format-de": "DE"
     //"format-uk": "Ukraine"
@@ -84,12 +84,12 @@
   },
   "cpu": {
     "interval": 1,
-    "format": " {}% ",
+    "format": " {}%",
     "max-length": 8
   },
   "memory": {
     "interval": 2,
-    "format": " {}% ",
+    "format": " {}%",
     "max-length": 8
   },
   "backlight": {
