@@ -44,7 +44,6 @@ tooltip label {
   color: #7984a4;
   background-color: transparent;
   border: none;
-  border-radius: 0;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
