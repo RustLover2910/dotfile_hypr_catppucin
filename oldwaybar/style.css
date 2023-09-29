@@ -7,7 +7,8 @@
 }
 
 window#waybar {
-  border-radius: 8px;
+  border-radius: 6px;
+  border: 2px solid @mauve;
   background: @base;
 }
 
@@ -51,11 +52,12 @@ tooltip label {
   background-color: transparent;
 }
 #workspace button.hover {
-  background-color: #303446;
+  background-color: transparent;
 }
 #workspaces button.active {
-  color: @flamingo;
+  color: @lavender;
 }
+
 
 #pulseaudio {
   color: @lavender;
@@ -92,10 +94,10 @@ tooltip label {
   color: @yellow;
 }
 #language {
-  color: @pink;
+  color: @mauve;
 }
 #backlight {
-  color: @flamingo;
+  color: @lavender;
 }
 #battery {
   color: @sapphire;
