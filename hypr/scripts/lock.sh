@@ -24,3 +24,5 @@ swaylock \
         --grace-no-touch \
         --grace-no-mouse \
         --font 'JetBrainsMono Nerd Font' \
+        --datestr '%a %d/%m'\
+        --ignore-empty-password \

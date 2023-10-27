@@ -1,9 +1,9 @@
 {
   "layer": "top",
-  "margin-left": 8,
-  "margin-right": 8,
-  "margin-top": 10,
-  "margin-down": 15,
+  "margin-left": 10,
+  "margin-right": 10,
+  "margin-top": 8,
+  "margin-down": 12,
   "modules-left": [
     "tray",
     "custom/player"

@@ -92,7 +92,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 2
+    frame_width = 0
 
     # Defines color of the frame around the notification window.
     frame_color = "#ca9ee6"
@@ -109,7 +109,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = frame
+    separator_color = auto
 
     # Sort messages by urgency.
     sort = yes
@@ -201,7 +201,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = "Papirus-Dark" 
+    icon_theme = "Tela-dracula" 
     # You can also set multiple icon themes, with the leftmost one being used first.
     # icon_theme = "Adwaita, breeze"
 
@@ -313,7 +313,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
+    background = "#303446"
     foreground = "#888888"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
@@ -462,14 +462,14 @@ frame_color = "#ca9ee6"
 separator_color= frame
 
 [urgency_low]
-background = "#1E1E2E"
-foreground = "#ca9ee6;"
+background = "#303446"
+foreground = "#c6d0f5;"
 
 [urgency_normal]
-background = "#1E1E2E"
-foreground = "#ca9ee6;"
+background = "#303446"
+foreground = "#c6d0f5;"
 
 [urgency_critical]
-background = "#1E1E2E"
-foreground = "#ca9ee6"
+background = "#303446"
+foreground = "#c6d0f5"
 frame_color = "#FAB387"
