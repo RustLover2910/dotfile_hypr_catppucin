@@ -15,4 +15,5 @@ Wallpaper : https://gtgraphics.de/en/wallpapers/anomaly
 People who I yoink the codes from;
 
 https://github.com/adi1090x/rofi
+
 https://github.com/d1en25/Hyprland-dotfiles
