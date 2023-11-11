@@ -1,9 +1,5 @@
 # dotfile_hypr_catppucin
  hyprland config with catppucin
- 
-![Uploading 23-11-11_18-03-57_screenshot.png…]()
-
-
 
 Just yoink the codes!
 
